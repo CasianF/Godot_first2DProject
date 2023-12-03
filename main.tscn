@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0xhpnxpsxi00"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_tlknd"]
+[ext_resource type="PackedScene" uid="uid://dnvs0hd1xfx0r" path="res://parallax_background.tscn" id="2_ov2hg"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(521, 232)
+script = ExtResource("1_tlknd")
+
+[node name="PlayButton" type="Button" parent="."]
+offset_left = -1.0
+offset_top = -16.0
+offset_right = 145.0
+offset_bottom = 74.0
+text = "Play"
+metadata/_edit_use_anchors_ = true
+
+[node name="QuitButton" type="Button" parent="."]
+offset_left = -1.0
+offset_top = 120.0
+offset_right = 148.0
+offset_bottom = 213.0
+text = "Quit"
+metadata/_edit_use_anchors_ = true
+
+[node name="BG" parent="." instance=ExtResource("2_ov2hg")]
+
+[node name="GameTitle" type="Label" parent="."]
+offset_left = -209.0
+offset_top = -176.0
+offset_right = 377.0
+offset_bottom = -89.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 56
+text = "Goofy ahh platformer"
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

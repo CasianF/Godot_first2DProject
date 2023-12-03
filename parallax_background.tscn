@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnvs0hd1xfx0r"]
+
+[ext_resource type="Texture2D" uid="uid://bf46i788xy51o" path="res://Sunny-land-files/Graphical Assets/environment/Background/back.png" id="1_6oja5"]
+[ext_resource type="Script" path="res://parallax_background.gd" id="1_op3cx"]
+[ext_resource type="Texture2D" uid="uid://dar7qecqj6eto" path="res://Sunny-land-files/Graphical Assets/environment/Background/middle.png" id="2_vk7kf"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_op3cx")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1140.15, 0)
+
+[node name="Back" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(568, 304)
+scale = Vector2(2.98177, 2.59583)
+texture = ExtResource("1_6oja5")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.695, 0.695)
+motion_mirroring = Vector2(1092.06, 0)
+
+[node name="Middle" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(264.5, 550.999)
+scale = Vector2(1.03977, 1.29891)
+texture = ExtResource("2_vk7kf")
+
+[node name="Middle2" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(83.4998, 555.999)
+scale = Vector2(1.03977, 1.29891)
+texture = ExtResource("2_vk7kf")
+
+[node name="Middle3" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(447.5, 557.999)
+scale = Vector2(1.03977, 1.29891)
+texture = ExtResource("2_vk7kf")
+
+[node name="Middle4" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(628.5, 553.999)
+scale = Vector2(1.03977, 1.29891)
+texture = ExtResource("2_vk7kf")
+
+[node name="Middle5" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(809.5, 551.999)
+scale = Vector2(1.03977, 1.29891)
+texture = ExtResource("2_vk7kf")
+
+[node name="Middle6" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(992.5, 557.999)
+scale = Vector2(1.03977, 1.29891)
+texture = ExtResource("2_vk7kf")
+
+[node name="Middle7" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(1173.5, 553.999)
+scale = Vector2(1.03977, 1.29891)
+texture = ExtResource("2_vk7kf")
